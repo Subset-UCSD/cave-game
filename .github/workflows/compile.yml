@@ -34,13 +34,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-      - name: Build escape game
-        run: |
-          cd escape/
-          npm install || echo 'install fail :('
-          npm run build || echo 'build fail :('
-          # do not upload node_modules to github pages
-          rm -rf node_modules/ || echo 'rm fail :('
       - name: Build cave game
         run: |
           cd cave-game/
@@ -48,13 +41,6 @@ jobs:
           npm run build || echo 'cavebuild fail :('
           # do not upload node_modules to github pages
           rm -rf node_modules/ || echo 'rm fail :('
-      # - name: Build queens
-      #   run: |
-      #     cd 👑/ || echo "cd fail ??"
-      #     npm install || echo 'install fail :('
-      #     npm run build || echo 'cavebuild fail :('
-      #     # do not upload node_modules to github pages
-      #     rm -rf node_modules/ || echo 'rm fail :('
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
