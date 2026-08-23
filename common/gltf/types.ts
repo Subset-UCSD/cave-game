@@ -21,13 +21,7 @@ export const componentSizes = {
 };
 
 export type GltfMode = WebGL2RenderingContext[
-	| "POINTS"
-	| "LINES"
-	| "LINE_LOOP"
-	| "LINE_STRIP"
-	| "TRIANGLES"
-	| "TRIANGLE_STRIP"
-	| "TRIANGLE_FAN"];
+	"POINTS" | "LINES" | "LINE_LOOP" | "LINE_STRIP" | "TRIANGLES" | "TRIANGLE_STRIP" | "TRIANGLE_FAN"];
 export type GltfPrimitive = {
 	/**
 	 * Values are the index of accessor. Numbers start at 0 (eg `TEXCOORD_0`)

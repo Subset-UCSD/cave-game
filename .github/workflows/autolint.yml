@@ -3,7 +3,7 @@ name: autofix lint errors in cave game, pretiter
 on:
   push:
     branches:
-      - main  # or the branch you want to monitor
+      - main # or the branch you want to monitor
   workflow_dispatch:
 
 permissions:
@@ -14,19 +14,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: npm run format
-      run: |
-        git config user.name "Thomas A. Powell"
-        git config user.email "tpowell@pint.com"
+      - name: npm run format
+        run: |
+          git config user.name "Thomas A. Powell"
+          git config user.email "tpowell@pint.com"
 
-        npm install || true
-        npm run format || true
+          npm install || true
+          npm run format || true
 
-        git add . 
-        git commit -m "Format code"  || true
+          git add . 
+          git commit -m "Format code"  || true
 
-        # Push the revert commits
-        git push origin HEAD
+          # Push the revert commits
+          git push origin HEAD

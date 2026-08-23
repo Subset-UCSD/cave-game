@@ -8,11 +8,11 @@
 // https://github.com/ucsd-cse125-sp24/group1/blob/main/client/render/engine/RenderPipeline.ts
 
 import { SerializedCollider } from "../../common/messages";
+import { ShaderProgram } from "./ShaderProgram";
 import gltfFragShader from "./shaders/gltf.frag";
 import gltfVertShader from "./shaders/gltf.vert";
 import wiredFragShader from "./shaders/wired.frag";
 import wiredVertShader from "./shaders/wired.vert";
-import { ShaderProgram } from "./ShaderProgram";
 
 export type TextureType = "2d" | "cubemap";
 
