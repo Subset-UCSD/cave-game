@@ -116,11 +116,6 @@ export class WsServer implements Server<ClientMessage, ServerMessage> {
 	}
 
 	#handleNewConnection = (ws: WebSocket, req: http.IncomingMessage) => {
-		if (req.url?.startsWith("/not")) {
-			not.handleWsConn(ws);
-			return;
-		}
-
 		this.#unhangServer(Symbol());
 
 		ws.on("message", (rawData) => {

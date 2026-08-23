@@ -48,13 +48,13 @@ body::after {
 	background-size: contain;
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-image: url("../public/ass/hand.webp");
+	background-image: url("../public/assets/hand.webp");
 }
 body[data-hand="grapple"]::after {
-	background-image: url("../public/ass/hand-grapple.webp");
+	background-image: url("../public/assets/hand-grapple.webp");
 }
 body[data-hand="spawn-box"]::after {
-	background-image: url("../public/ass/hand-box.webp");
+	background-image: url("../public/assets/hand-box.webp");
 }
 
 .help {
