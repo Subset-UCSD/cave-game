@@ -1,8 +1,8 @@
 name: deploy cave game
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 jobs:
@@ -16,4 +16,5 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }} # Store your private key as a secret
 
       - name: Restart server
+        # TODO: pretty sure server has the commit challenge repo checked out so this won't work
         run: ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_TARGET }} "cd /app/subset/cave-game && git diff HEAD && git reset --hard HEAD && git pull && ./deploy_serve.sh"
