@@ -1,0 +1,19 @@
+# For reference only; the real config is at `systemctl cat cavegame.service`
+# /etc/systemd/system/cavegame.service
+[Unit]
+Description=Cave Game
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+WorkingDirectory=/app/cave-game/
+
+ExecStart=node ./dist/index.js
+
+[Install]
+WantedBy=multi-user.target

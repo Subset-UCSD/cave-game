@@ -34,10 +34,10 @@ $ node dist/index.js
 > To join the cave game instance, contact someone through Discord.
 
 ```shell
-$ ssh -i cavegameDONOTDELETE 159.223.201.89
+$ ssh -i cave-game.key 159.223.201.89
 ```
 
-where `cavegameDONOTDELETE` is the private key
+where `cave-game.key` is the private key
 
 look at the logs: (`-f` is a live feed i think)
 

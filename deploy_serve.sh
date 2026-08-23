@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# called by .github/workflows/fuckelonmusk.yml
+# called by .github/workflows/deploy.yml
 
 npm install
 npm run build
