@@ -1,34 +1,49 @@
-## development
+# Cave Game
 
-requires node 22+ for `--experimental-strip-types` to run typescript
+> [!NOTE]
+> This was originally developed as part of [Commit Challenge 2025](https://github.com/Subset-UCSD/Commit-Challenge-2025/). All commits from before August 2026 were extracted from that repo.
+
+## Development
+
+Requires Node 22+ for `--experimental-strip-types` to run TypeScript.
 
 ```shell
-$ cd cave-game
 $ npm install
 $ npm run dev
 ```
 
-open http://localhost:8080/ in the browser
+Open http://localhost:8080/ in the browser.
 
-## build
+## Build
 
 ```shell
 $ npm run build
-$ npm run build
 ```
 
-run the server:
+Run the server:
 
 ```shell
 $ node dist/index.js
 ```
 
-## deployment
+## Deployment
 
 > [!TIP]
-> Instructions for connecting are in the root repo readme
+> To join the cave game instance, contact someone through Discord.
 
-## design
+```shell
+$ ssh -i cavegameDONOTDELETE 159.223.201.89
+```
+
+where `cavegameDONOTDELETE` is the private key
+
+look at the logs: (`-f` is a live feed i think)
+
+```shell
+$ sudo journalctl -u cavegame.service -f
+```
+
+## Design
 
 game goals
 
@@ -66,17 +81,3 @@ loot items:
   - special damage effects
   - better weapons
   - healing tonics, immunity brews for certain damage types
-
----
-
-### De Vocis Sermone
-
-Audi, viator, et ausculta susurros speluncae. Cum nostro novo propinquitatis vocis sermone, nunc cum comitibus tuis exploratoribus loqui potes, dum in profunditates demergis. Vox tua per cavernas resonabit, attingens solum eos qui prope sunt. Quo longius abes a comitibus tuis, eo infirmior fiet vox tua, donec tenebris amittatur.
-
-Ut choro te adjungas, simpliciter preme iconem microphoni iuxta vectem sermonis. Navigator tuus petet licentiam utendi microphono tuo. Concede eam, et vox tua liberabitur.
-
-#### Ad Administratorem Servi
-
-Ut certissima communicatio inter viatores fiat, commendatur ut in servo tuo portus UDP aperias. Dum servus noster signorum utitur connexione TCP exsistente, connexiones WebRTC paris ad parem certiores erunt si directam connexionem UDP stabilire possunt.
-
-Commendamus ut portus UDP `9000-9100` aperias.
