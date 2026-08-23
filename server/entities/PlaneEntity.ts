@@ -1,8 +1,8 @@
 import * as phys from "cannon-es";
 import { mat4 } from "gl-matrix";
 
-import { ModelInstance } from "../../communism/messages";
-import { Vector3 } from "../../communism/types";
+import { ModelInstance } from "../../common/messages";
+import { Vector3 } from "../../common/types";
 import { Game } from "../Game";
 import { mats } from "../materials";
 import { Entity } from "./Entity";

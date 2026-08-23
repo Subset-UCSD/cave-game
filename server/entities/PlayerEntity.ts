@@ -1,10 +1,10 @@
 import * as phys from "cannon-es";
 import { mat4, quat } from "gl-matrix";
 
-import { cameraTransform } from "../../communism/cam";
-import { NUM_SERVER_TICKS, SERVER_GAME_TICK } from "../../communism/constants";
-import { ModelInstance } from "../../communism/messages";
-import { MovementInfo, Vector3, YXZEuler } from "../../communism/types";
+import { cameraTransform } from "../../common/cam";
+import { NUM_SERVER_TICKS, SERVER_GAME_TICK } from "../../common/constants";
+import { ModelInstance } from "../../common/messages";
+import { MovementInfo, Vector3, YXZEuler } from "../../common/types";
 import { Game } from "../Game";
 import { mats } from "../materials";
 import { Entity } from "./Entity";

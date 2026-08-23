@@ -1,6 +1,6 @@
 import { Box, Cylinder, Plane, Shape, Sphere } from "cannon-es";
 
-import { SerializedColliderBase } from "../../communism/messages";
+import { SerializedColliderBase } from "../../common/messages";
 
 export function serializeShape(shape: Shape): SerializedColliderBase {
 	if (shape instanceof Box) {

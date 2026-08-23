@@ -1,8 +1,8 @@
 import { mat4 } from "gl-matrix";
 
-import { GltfParser } from "../../communism/gltf/parser";
-import { componentSizes, ComponentType, componentTypes, GltfMaterial, GltfMode } from "../../communism/gltf/types";
-import { expect, f32ArrayEqual, mergeMatrices } from "../../communism/utils";
+import { GltfParser } from "../../common/gltf/parser";
+import { componentSizes, ComponentType, componentTypes, GltfMaterial, GltfMode } from "../../common/gltf/types";
+import { expect, f32ArrayEqual, mergeMatrices } from "../../common/utils";
 import { Gl } from "./Gl";
 
 export type ModelInstance = {

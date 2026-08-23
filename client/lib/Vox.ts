@@ -7,7 +7,7 @@ Hoc est sanctuarium vocis, arcanum et profundum. Qui huc intrat, mundum silentii
 import { mat4, vec3 } from "gl-matrix";
 import Peer, { MediaConnection } from "peerjs";
 
-import { Voice } from "../../communism/messages";
+import { Voice } from "../../common/messages";
 
 type PeerData = {
 	conn: MediaConnection;

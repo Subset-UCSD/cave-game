@@ -1,7 +1,7 @@
-import { parseGlb } from "../../communism/gltf/bingltfparser";
-import { ModelId } from "../../communism/messages";
+import { parseGlb } from "../../common/gltf/bingltfparser";
+import { ModelId } from "../../common/messages";
 import { Gl } from "../render/Gl";
-import { GltfModel } from "../render/Glthefuck";
+import { GltfModel } from "../render/GltfModel";
 
 /**
  * this is jim. he manages the models

@@ -9,19 +9,12 @@ import "./index.css";
 
 import { mat4, vec3 } from "gl-matrix";
 
-import { cameraTransform } from "../communism/cam";
-import { SERVER_GAME_TICK } from "../communism/constants";
-import {
-	CameraMode,
-	ClientMessage,
-	ModelId,
-	ModelInstance,
-	SerializedBody,
-	ServerMessage,
-} from "../communism/messages";
-import { Vector3, YXZEuler } from "../communism/types";
-import { expect, fuck, shouldBeNever } from "../communism/utils";
-import { listenToMovement } from "./cam-glam";
+import { cameraTransform } from "../common/cam";
+import { SERVER_GAME_TICK } from "../common/constants";
+import { CameraMode, ClientMessage, ModelId, ModelInstance, SerializedBody, ServerMessage } from "../common/messages";
+import { Vector3, YXZEuler } from "../common/types";
+import { expect, fuck, shouldBeNever } from "../common/utils";
+import { listenToMovement } from "./camera-controls";
 import { InputListener } from "./input";
 import { interpolateMat4, interpolateVector3, Interpolator, lerp, slerpDirVec } from "./lib/Interpolator";
 import { ModelManager } from "./lib/ModelManager";

@@ -1,6 +1,6 @@
 import { allowDomExceptions } from "./lib/allowDomExceptions";
 
-export type CamGlamMethods = {
+export type CameraControlMethods = {
 	lockPointer: (isTouch: boolean) => void;
 	unlockPointer: () => void;
 };

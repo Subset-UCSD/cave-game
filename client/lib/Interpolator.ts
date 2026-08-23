@@ -1,7 +1,7 @@
 import { mat4, quat, vec3 } from "gl-matrix";
 import interpolate from "mat4-interpolate";
 
-import { Vector3 } from "../../communism/types";
+import { Vector3 } from "../../common/types";
 
 export type Interpolate<T> = (old: T, newValue: T, progress: number) => T;
 

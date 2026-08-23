@@ -1,6 +1,6 @@
 import * as phys from "cannon-es";
 
-import { Vector3 } from "../../communism/types";
+import { Vector3 } from "../../common/types";
 import { Game } from "../Game";
 import { mats } from "../materials";
 import { Entity } from "./Entity";

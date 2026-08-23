@@ -1,7 +1,7 @@
 import * as phys from "cannon-es";
 
-import { EntityModel } from "../../communism/messages";
-import { Quaternion, Vector3 } from "../../communism/types";
+import { EntityModel } from "../../common/messages";
+import { Quaternion, Vector3 } from "../../common/types";
 import { Game } from "../Game";
 import { Entity } from "./Entity";
 

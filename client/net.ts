@@ -1,4 +1,4 @@
-import { sleep } from "../communism/utils";
+import { sleep } from "../common/utils";
 
 export type Handlers<ClientMessage, ServerMessage> = {
 	open: () => void;

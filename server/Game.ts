@@ -10,10 +10,10 @@
 import * as phys from "cannon-es";
 import { Body } from "cannon-es";
 
-import { SERVER_GAME_TICK } from "../communism/constants";
-import { ClientMessage, ServerMessage, Voice } from "../communism/messages";
-import { MovementInfo, Vector3 } from "../communism/types";
-import { shouldBeNever } from "../communism/utils";
+import { SERVER_GAME_TICK } from "../common/constants";
+import { ClientMessage, ServerMessage, Voice } from "../common/messages";
+import { MovementInfo, Vector3 } from "../common/types";
+import { shouldBeNever } from "../common/utils";
 import { BoxEntity } from "./entities/BoxEntity";
 import { Entity, EntityId } from "./entities/Entity";
 import { GrappleAnchorEntity } from "./entities/GrappleAnchorEntity";

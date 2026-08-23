@@ -1,5 +1,5 @@
-import { ClientInputs } from "../../communism/types";
-import { YXZEuler } from "../../communism/types";
+import { ClientInputs } from "../../common/types";
+import { YXZEuler } from "../../common/types";
 
 /**
  * Runs `func` on every key and creates an object out of the results. Useful for

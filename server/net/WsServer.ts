@@ -6,9 +6,8 @@ import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 import { WebSocket, WebSocketServer } from "ws";
 
-import { BiMap } from "../../communism/lib/BiMap";
-import { ClientMessage, ServerMessage } from "../../communism/messages";
-import * as not from "../../not/indice";
+import { BiMap } from "../../common/lib/BiMap";
+import { ClientMessage, ServerMessage } from "../../common/messages";
 import { Game } from "../Game";
 import { Connection, Server } from "./Server";
 // import { ExpressPeerServer } from "peer";

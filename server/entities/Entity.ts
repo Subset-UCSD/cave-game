@@ -1,9 +1,9 @@
 import * as phys from "cannon-es";
 import { mat4 } from "gl-matrix";
 
-import { SERVER_GAME_TICK } from "../../communism/constants";
-import { EntityModel, ModelInstance } from "../../communism/messages";
-import { Vector3 } from "../../communism/types";
+import { SERVER_GAME_TICK } from "../../common/constants";
+import { EntityModel, ModelInstance } from "../../common/messages";
+import { Vector3 } from "../../common/types";
 import { Game } from "../Game";
 import { PhysicsWorld } from "../PhysicsWorld";
 export type Tag = "normal";
@@ -72,7 +72,7 @@ export abstract class Entity {
 
 	getBitFlag(): number {
 		return -1;
-		/*if (this.tags.size == 0) return -1;	
+		/*if (this.tags.size == 0) return -1;
 
 		let flag = 0;
 
