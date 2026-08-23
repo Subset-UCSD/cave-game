@@ -1,6 +1,5 @@
 dist/
 public/**/*.css*
 public/**/*.js*
-# ??? why
-# public/**/*.glb
 public/*.webp
+node_modules/
