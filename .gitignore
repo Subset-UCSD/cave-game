@@ -4,3 +4,4 @@ public/**/*.js*
 public/*.webp
 node_modules/
 *.key
+db.json
