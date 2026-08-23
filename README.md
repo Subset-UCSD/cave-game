@@ -1,5 +1,7 @@
 # Cave Game
 
+[Live](http://159.223.201.89:8080/)
+
 > [!NOTE]
 > This was originally developed as part of [Commit Challenge 2025](https://github.com/Subset-UCSD/Commit-Challenge-2025/). All commits from before August 2026 were extracted from that repo.
 
